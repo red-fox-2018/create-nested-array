@@ -3,7 +3,8 @@ function nestedArray(row, col) {
   for (var i = 0; i < row; i++) {
     array[i] = [];
     for (var j = 0; j < col; j++) {
-      array[i][j] = String.fromCharCode(Math.floor(Math.random() * (122 - 97 + 1) + 97))
+      let randomLetterIndex = Math.floor(Math.random() * (122 - 97 + 1) + 97)
+      array[i][j] = String.fromCharCode(randomLetterIndex)
     }
   }
   return array;
